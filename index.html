@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Cuisine Chef | Real Food. Real Hospitality. Real Partnerships.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#256d12;--g2:#3f8a1a;--o:#f47f0b;--cream:#fbfaf2;--ink:#1d2a17;--mut:#667060;--card:#fff;--line:#e3ead3}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Poppins,Arial,sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;font-weight:500}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.w{max-width:1200px;margin:auto;padding:0 24px}
+#pre{position:fixed;inset:0;background:var(--g);z-index:999;display:grid;place-items:center;transition:opacity .6s,visibility .6s}
+#pre.x{opacity:0;visibility:hidden}.pl{text-align:center;color:#fff;perspective:600px}
+.hat{width:90px;height:90px;margin:auto;border-radius:50%;background:var(--o);display:grid;place-items:center;font-size:44px;animation:sp 1.4s infinite linear;transform-style:preserve-3d}
+@keyframes sp{to{transform:rotateY(360deg)}}.pl p{margin-top:18px;font-family:'Playfair Display',serif;font-size:22px}
+.bar{width:180px;height:4px;background:#ffffff33;margin:14px auto 0;border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--o);animation:ld 1.6s forwards}@keyframes ld{to{width:100%}}
+header{position:sticky;top:0;z-index:50;background:#fffffff2;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nv{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo img{height:52px}nav{display:flex;gap:20px;font-size:13px;align-items:center}nav a:hover{color:var(--o)}
+.top{font-size:12px;color:var(--mut);display:flex;gap:10px}
+.btn{display:inline-block;padding:12px 22px;border-radius:7px;font-size:14px;font-weight:500;border:2px solid var(--o);background:var(--o);color:#fff;cursor:pointer;transition:transform .25s,box-shadow .25s;font-family:inherit}
+.btn:hover{transform:translateY(-3px) translateZ(20px);box-shadow:0 10px 20px #f47f0b55}
+.btn.o{background:transparent;border-color:#fff;color:#fff}.btn.d{background:transparent;color:var(--ink);border-color:var(--ink)}
+.bg{display:none;background:none;border:0;font-size:28px;cursor:pointer}
+.hero{position:relative;background:#163a0b;color:#fff;overflow:hidden;min-height:560px;display:flex;align-items:center;margin:12px;border-radius:6px}
+.hi{position:absolute;right:0;top:0;height:100%;width:55%;object-fit:cover;mask-image:linear-gradient(90deg,transparent,#000 35%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%)}
+.hero .w{position:relative;z-index:2;width:100%;padding-top:50px;padding-bottom:50px}
+.ey{font-size:12px;letter-spacing:2px;color:#ffe2bf;margin-bottom:18px}
+.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.05;max-width:620px;margin-bottom:6px}
+.hero h1:after{content:"";display:block;width:50px;height:3px;background:var(--o);margin:14px 0}
+.hero h4{font-family:'Playfair Display',serif;font-weight:500;font-size:22px;line-height:1.3;margin-bottom:16px}
+.hero p{max-width:440px;font-size:14px;color:#ddd;margin-bottom:26px}.bt{display:flex;gap:12px;flex-wrap:wrap}
+.fs{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:30px 24px}
+.fi{display:flex;gap:14px;align-items:center;font-size:13px}.fi b{display:block;font-size:14px}.fi span{color:var(--mut);font-size:12px}
+.ic{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:22px;background:var(--g2)}.ic.or{background:var(--o)}
+section{padding:60px 0}.sh{margin-bottom:30px}.sh small{color:var(--o);font-size:12px;letter-spacing:2px;display:block;margin-bottom:8px}
+.sh h2{font-size:clamp(30px,4vw,44px);line-height:1.1}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;perspective:1000px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:transform .15s,box-shadow .3s;transform-style:preserve-3d;will-change:transform}
+.card:hover{box-shadow:0 22px 40px #0002}.card img{width:100%;height:130px;object-fit:cover}
+.card div{padding:14px}.card h3{font-size:16px;margin-bottom:6px}.card p{font-size:12px;color:var(--mut);margin-bottom:10px;line-height:1.5}.card a{font-size:12px;color:var(--o);font-weight:500}
+.sp{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.sp.r .im{order:-1}
+.im{border-radius:10px;overflow:hidden;box-shadow:0 20px 40px #0003;transform-style:preserve-3d;transition:transform .15s}.im img{width:100%;height:340px;object-fit:cover}
+.sp h2{font-size:clamp(30px,4vw,42px);margin-bottom:14px}.sp p{color:var(--mut);font-size:15px;line-height:1.7;margin-bottom:22px}
+.ib{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 10px}
+.ib div{text-align:center;font-size:12px;padding:16px 8px;background:#fff;border:1px solid var(--line);border-radius:8px}.ib .ic{margin:0 auto 8px}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;perspective:900px}.st .card img{height:110px}.st .card h3{font-size:14px;text-align:center;padding:10px}.st .card{padding:0}
+.alt{background:#f1f6e4}.vid{background:var(--g);color:#fff;border-radius:8px;margin:0 12px}
+.vd{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}.vd h2{font-size:38px;margin-bottom:14px}.vd p{color:#d8ecc8;margin-bottom:20px}
+.vp{position:relative;border-radius:8px;overflow:hidden;cursor:pointer;box-shadow:0 25px 50px #0006}.vp img{width:100%;height:260px;object-fit:cover}.vp iframe,.vp video{position:absolute;inset:0;width:100%;height:100%;border:0}.vp video{object-fit:contain;background:#000}
+.pb{position:absolute;inset:0;margin:auto;width:70px;height:70px;border-radius:50%;background:#0009;border:2px solid #fff;color:#fff;font-size:26px;cursor:pointer;animation:pu 1.8s infinite}@keyframes pu{50%{transform:scale(1.12)}}
+.q3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;perspective:1000px}
+.q{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;font-size:13px;line-height:1.7}.q:before{content:"\201C";font-family:Georgia;font-size:60px;color:var(--o);line-height:.5;display:block}.q b{display:block;margin-top:12px;font-size:12px;color:var(--mut)}
+.dt{display:flex;justify-content:center;gap:8px;margin-top:20px}.dt button{width:10px;height:10px;border-radius:50%;border:0;background:#ccc;cursor:pointer}.dt .on{background:var(--o)}
+.cta{margin:30px 12px 0;background:linear-gradient(90deg,#256d12,#3f8a1a);color:#fff;border-radius:8px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.cta h2{font-size:34px;font-style:italic}
+.rv{opacity:0;transform:perspective(900px) rotateX(14deg) translateY(40px);transition:all .9s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:40px}.ct form{display:grid;gap:12px}
+input,textarea,select{padding:13px;border:1px solid var(--line);border-radius:7px;font:inherit;font-size:14px;width:100%;background:#fff}
+.ci p{margin:12px 0;color:var(--mut)}.ci b{color:var(--ink)}
+footer{background:#161d16;color:#aab;text-align:center;padding:26px;font-size:13px;margin-top:60px}
+.md{position:fixed;inset:0;background:#000b;z-index:200;display:none;place-items:center;padding:20px}.md.on{display:grid}
+.mb{background:#fff;border-radius:10px;padding:28px;max-width:440px;width:100%;position:relative;animation:pop .4s}@keyframes pop{from{transform:perspective(600px) rotateX(-40deg) scale(.8);opacity:0}}
+.mb form{display:grid;gap:12px;margin-top:14px}.mb h3{font-size:26px}.cl{position:absolute;right:14px;top:8px;border:0;background:none;font-size:28px;cursor:pointer}
+.vm{max-width:760px;background:#000;padding:0}.vm img{width:100%;border-radius:10px 10px 0 0}.vm p{color:#fff;padding:16px;text-align:center;font-size:13px}
+#ts{position:fixed;bottom:24px;left:50%;transform:translate(-50%,100px);background:var(--g);color:#fff;padding:14px 24px;border-radius:8px;z-index:300;transition:transform .4s}#ts.on{transform:translate(-50%,0)}
+@media(max-width:960px){.g5,.ib,.st{grid-template-columns:repeat(2,1fr)}.fs{grid-template-columns:repeat(2,1fr)}.sp,.vd,.ct,.q3{grid-template-columns:1fr}.sp.r .im{order:0}.top{display:none}
+.bg{display:block}nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid var(--line)}nav.on{display:flex}.hi{width:100%;opacity:.35}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;z-index:999;background:#fff;padding:10px}
+:focus-visible{outline:3px solid var(--o);outline-offset:2px}
+.pg{display:none}.pg.on{display:block}nav a.on{color:var(--o);font-weight:600}
+.hero.s{min-height:420px}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.bx{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px}.bx h3{font-size:18px;margin-bottom:8px}.bx p{font-size:13px;color:var(--mut);line-height:1.6}
+.nt{font-size:12px;color:var(--mut);margin-top:14px;font-style:italic}
+.vp{background:linear-gradient(135deg,#256d12,#3f8a1a);height:260px;display:grid;place-items:center}.vp img.vt{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.vp img.vl{position:absolute;top:12px;left:12px;width:130px;height:auto;filter:drop-shadow(0 0 2px #fff) drop-shadow(0 0 5px #fff) drop-shadow(0 0 9px #fff)}.vp span{position:absolute;bottom:12px;left:16px;font-size:12px;text-shadow:0 1px 4px #000}.vp{position:relative}.im img{height:auto;aspect-ratio:4/3;object-fit:cover}
+.fm{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fm .f{grid-column:1/-1}label{font-size:12px;color:var(--mut);display:block;margin-bottom:4px}
+#ok{display:none;background:#e8f3ea;border:1px solid var(--g2);padding:22px;border-radius:8px}#ok.on{display:block}
+footer{background:#fff;color:var(--ink);text-align:left;padding:0;margin-top:60px;border-top:4px solid var(--o)}.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;padding:44px 24px}.fl{height:64px;margin-bottom:12px}footer h4{font-family:'Playfair Display',serif;font-size:18px;margin-bottom:12px;color:var(--g)}footer a{display:block;color:var(--mut);font-size:13px;margin:7px 0}footer a:hover{color:var(--o)}.fg p{font-size:13px;color:var(--mut);margin:7px 0}.fb{background:var(--g);color:#e6eee7;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:14px max(24px,calc((100% - 1200px)/2 + 24px));font-size:12px}.fb b{color:#fff}.hero .sl{font-family:'Playfair Display',serif;font-size:22px;line-height:1.3;margin-bottom:16px;color:#fff;max-width:none}
+@media(max-width:960px){.g3,.g4,.fm,.fg{grid-template-columns:1fr!important}.fb{justify-content:center;text-align:center}}
+
+/* Refined visual polish */
+body{background:#fcfbf7}
+header{box-shadow:0 6px 24px #17220d0a}
+.nv{height:78px}
+nav{gap:14px;font-size:11px}
+nav a{position:relative;padding:8px 0;white-space:nowrap}
+nav a:after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:2px;background:var(--o);transition:right .2s}
+nav a:hover:after,nav a.on:after{right:0}
+.hero{min-height:600px;margin:16px 18px;border-radius:18px;background:#142b12;box-shadow:0 18px 48px #142b1226}
+.hero:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#10270df2 0%,#10270dcc 43%,#10270d35 100%)}
+.hi{z-index:0;mask-image:none;-webkit-mask-image:none}
+.hero .w{padding-top:64px;padding-bottom:64px}
+.ey{display:inline-block;padding:9px 13px;border:1px solid #ffffff40;border-radius:999px;background:#ffffff12;backdrop-filter:blur(8px);font-size:11px;letter-spacing:1.6px}
+.hero h1{max-width:680px;letter-spacing:-.7px;text-wrap:balance}
+.btn{border-radius:9px;background:linear-gradient(135deg,#f78312,#e96c00);border-color:#f47f0b;box-shadow:0 8px 20px #f47f0b25}
+.btn.o{background:#ffffff12;border-color:#ffffffa8;box-shadow:none;backdrop-filter:blur(8px)}
+.btn.d{background:transparent}
+section{padding:76px 0}
+.sh{margin-bottom:34px}
+.sh small{font-weight:600}
+.sh h2{letter-spacing:-.5px}
+.g5,.g3,.g4,.st,.q3{gap:20px}
+.card,.bx,.q,.ib>div{border-color:#e8e8dc;border-radius:14px;box-shadow:0 8px 24px #26351a0a}
+.card{display:flex;flex-direction:column;transition:box-shadow .25s,border-color .25s}
+.card:hover{border-color:#d6dfc7;box-shadow:0 16px 34px #26351a16}
+.card>img{height:auto;aspect-ratio:16/9;transition:transform .45s}
+.card:hover>img{transform:scale(1.035)}
+.card>div{display:flex;flex:1;flex-direction:column;padding:18px}
+.card h3{line-height:1.35}
+.card p{font-size:12.5px}
+.card a{margin-top:auto;padding-top:5px}
+.st .card>img{height:150px;aspect-ratio:auto}
+.st .card h3{padding:14px}
+.bx{padding:26px}
+.im{border-radius:16px;box-shadow:0 22px 48px #1c2a1630}
+.ib>div{padding:20px 12px}
+.vid{border-radius:18px;margin:0 18px;box-shadow:0 20px 48px #17220d20}
+.vp{border-radius:14px}
+.q{padding:28px}
+.cta{margin:34px 18px 0;padding:40px;border-radius:16px;background:linear-gradient(120deg,#1d5712,#3f8a1a);box-shadow:0 18px 40px #256d1226}
+footer{border-top:1px solid #e8e8dc}
+.fb{background:#183c12}
+@media(max-width:960px){
+  .ib[style]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .hero{min-height:560px;margin:12px;border-radius:16px}
+  .hero:after{background:linear-gradient(90deg,#10270de8 0%,#10270dbd 58%,#10270d70 100%)}
+  .hi{width:100%;opacity:.55}
+  .hero .w{padding-top:54px;padding-bottom:54px}
+  .vid{margin:0 12px;border-radius:16px}
+  .cta{margin-left:12px;margin-right:12px;padding:30px}
+}
+@media(max-width:600px){
+  .pg .hero{min-height:560px}
+  .pg .hero:after{inset:auto 0 0;height:180px;background:linear-gradient(180deg,#183c12 0%,#183c1266 24%,transparent 62%)}
+  .pg .hero .hi{top:auto;bottom:0;width:100%;height:180px;object-position:center 20%;opacity:1}
+  .pg .hero .w{max-width:100%;padding:46px 24px 200px}
+  section{padding:58px 0}
+  .nv{gap:10px}
+  .order-btn{padding:10px 13px;font-size:12px;white-space:nowrap}
+  .hero{min-height:540px}
+  .ey{font-size:9px;letter-spacing:1.2px}
+  .hero h1{font-size:clamp(36px,10vw,50px)}
+  .hero .sl{font-size:19px}
+  .bt .btn{width:100%;text-align:center}
+  .g5,.st,.ib{gap:12px}
+  .card>div{padding:14px}
+  .card h3{font-size:14px}
+  .cta{padding:26px 22px}
+  .cta h2{font-size:28px}
+}
+#hero.hero{min-height:520px;background:#183c12}
+#hero.hero:after{background:linear-gradient(90deg,#183c12 0%,#183c12 37%,#183c12ed 47%,#183c12a8 57%,transparent 72%)}
+#hero .hi{width:60%;object-position:center 42%;opacity:1}
+#hero .w{max-width:1200px;padding:58px 24px}
+#hero h1{max-width:540px}
+.hero-values{padding:20px 0 28px;background:#fff}
+.hero-values .w{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.hero-value{display:flex;align-items:center;gap:12px;min-width:0}
+.hero-value .ic{width:52px;height:52px;font-size:21px}
+.hero-value strong{display:block;font-size:13px;line-height:1.35;color:var(--ink)}
+.hero-value span{display:block;margin-top:3px;font-size:10px;line-height:1.45;color:var(--mut)}
+.order-btn{flex:none;white-space:nowrap}
+@media(max-width:960px){
+  #hero.hero:after{background:linear-gradient(90deg,#183c12f5 0%,#183c12e8 43%,#183c12a8 68%,#183c1250 100%)}
+  #hero .hi{width:72%;object-position:center 40%;opacity:1}
+  #hero .w{max-width:100%;padding:54px 24px}
+  .hero-values .w{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:16px}
+}
+@media(max-width:600px){
+  #hero.hero{min-height:560px}
+  #hero.hero:after{inset:auto 0 0;height:180px;background:linear-gradient(180deg,#183c12 0%,#183c1266 24%,transparent 62%)}
+  #hero .hi{top:auto;bottom:0;width:100%;height:180px;object-position:center 20%;opacity:1}
+  #hero .w{padding:46px 24px 200px}
+  .hero-values{padding:20px 0}
+  .hero-values .w{gap:16px 10px}
+  .hero-value{align-items:flex-start;gap:9px}
+  .hero-value .ic{width:42px;height:42px;font-size:18px}
+  .hero-value strong{font-size:11px}
+  .hero-value span{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){
+  nav a:after,.card,.card>img{transition:none}
+}
+</style></head><body><a class="skip" href="#main">Skip to content</a><div id="pre"><div class="pl"><div class="hat">👨‍🍳</div><p>Your Cuisine Chef</p><div class="bar"><i></i></div></div></div>
+<header><div class="w nv"><a href="#home" class="logo"><img src="logo.png" alt="Your Cuisine Chef"></a><nav id="nav" aria-label="Primary"><a href="#home">Home</a><a href="#school">Independent School Dining</a><a href="#corporate">Corporate &amp; Workplace Dining</a><a href="#cafe">Coffee Shops &amp; Cafés</a><a href="#catering">Catering &amp; Special Events</a><a href="#difference">The YCC Difference</a><a href="#contact">Contact / Request a Proposal</a></nav><a class="btn order-btn" href="https://mcknightscatering.getbento.com/" target="_blank" rel="noopener noreferrer">Order Now</a><button class="bg" id="bg" aria-label="Menu" aria-expanded="false">☰</button></div></header>
+<main id="main">
+<div class="pg" id="p-home">
+<div class="hero" id="hero"><img class="hi" id="hi" src="chef.jpg" alt="Chef carefully plating a meal in the kitchen"><div class="w">
+<div class="ey">FOODSERVICE MANAGEMENT FOR SCHOOLS, CORPORATE &amp; COMMUNITY</div>
+<h1>Real Food. Real Hospitality. Real Partnerships.</h1>
+<p class="sl">Scratch Cooking. Culinary Creativity. Local Leadership.</p>
+<p>Your Cuisine Chef (YCC) delivers exceptional dining experiences for independent schools, corporate workplaces, and organizations.</p>
+<div class="bt"><a class="btn" href="#solutions">Explore Our Dining Solutions</a><a class="btn o" href="#contact">Request a Proposal</a></div>
+</div></div>
+<section class="hero-values" aria-label="What makes YCC different"><div class="w"><div class="hero-value"><div class="ic" aria-hidden="true">🥗</div><div><strong>Scratch Cooking</strong><span>Real ingredients. Chef-crafted recipes.</span></div></div><div class="hero-value"><div class="ic or" aria-hidden="true">👨‍🍳</div><div><strong>Culinary Creativity</strong><span>Fresh ideas. Exciting menus.</span></div></div><div class="hero-value"><div class="ic" aria-hidden="true">📍</div><div><strong>Local Leadership</strong><span>Hands-on executive support.</span></div></div><div class="hero-value"><div class="ic or" aria-hidden="true">♥</div><div><strong>Stronger Communities</strong><span>More than a meal. A lasting impact.</span></div></div></div></section>
+<section id="solutions"><div class="w"><div class="sh rv"><small>OUR DINING SOLUTIONS</small><h2 class="serif">Customized Dining. Exceptional Experiences.</h2></div><div class="g5">
+<div class="card rv"><img src="c1.jpg" alt=""><div><h3>Independent School Dining</h3><p>Chef-prepared meals, flexible programs, and personalized service.</p><a href="#school">Learn More →</a></div></div>
+<div class="card rv"><img src="c2.jpg" alt=""><div><h3>Corporate &amp; Workplace Dining</h3><p>Fresh, convenient dining programs that bring people together.</p><a href="#corporate">Learn More →</a></div></div>
+<div class="card rv"><img src="c3.jpg" alt=""><div><h3>Coffee Shops &amp; Cafés</h3><p>Customized café concepts with specialty beverages and grab-and-go options.</p><a href="#cafe">Learn More →</a></div></div>
+<div class="card rv"><img src="c4.jpg" alt=""><div><h3>Catering &amp; Special Events</h3><p>Chef-crafted catering for school events, corporate functions and more.</p><a href="#catering">Learn More →</a></div></div>
+<div class="card rv"><img src="c5.jpg" alt=""><div><h3>Foodservice Management</h3><p>Culinary and operational leadership to strengthen your dining program.</p><a href="#difference">Learn More →</a></div></div>
+</div></div></section>
+<section class="vid" style="padding:50px 0"><div class="w"><div class="vd"><div><h2 class="serif">Hear From a School Partner</h2><p>Dr. Dallas Lusk, Executive Director at St. Mark Lutheran School, shares his experience partnering with Your Cuisine Chef.</p><button class="btn">▶ Watch the Video</button></div><div class="vp" role="button" tabindex="0" aria-label="Play video"><img class="vt" src="video.jpg" alt="Dr. Dallas Lusk video thumbnail"><img class="vl" src="logo.png" alt="Your Cuisine Chef"><button class="pb" tabindex="-1" aria-hidden="true">▶</button><span>Dr. Dallas Lusk, St. Mark Lutheran School</span></div></div></div></section>
+<section><div class="w"><div class="sh rv"><h2 class="serif">What Our Community Is Saying</h2></div><div class="q3"><div class="q rv">I have never experienced a school lunch that is consistently so good! Things like fresh green beans instead of canned. Homemade eggrolls, hamburgers, chicken tenders. I am just beyond impressed.<b>School Community Member</b></div><div class="q rv">It has completely changed the feel of lunch. Kids can smell the food while walking across campus, and they are excited to get their lunches.<b>Elizabeth Chavez, Northland Christian School</b></div><div class="q rv">You and all the other staff truly make his days at Northland so much better.<b>Amanda O'Kelley, Parent</b></div></div></div></section>
+<section class="alt"><div class="w"><div class="sp"><div class="rv"><h2 class="serif">Kids in the Kitchen</h2><p>Students learn where food comes from, cook alongside our chefs and build healthy habits that last.</p><a class="btn" href="#school">Student Engagement</a></div><div class="im rv"><img src="kids.jpg" alt="Chefs preparing food together in a kitchen"></div></div></div></section>
+<section><div class="w"><div class="sp r"><div class="rv"><h2 class="serif">Our Story Is About People</h2><p>Your Cuisine Chef was built on a belief that great food brings people together. Founder Chef Gabriel McKnight leads a locally owned team with a passion for exceptional food and strong relationships.</p><a class="btn" href="#difference">Meet Our Team</a></div><div class="im rv"><img src="hero.jpg" alt="Fresh ingredients being prepared by hand in the kitchen"></div></div></div></section>
+<div class="cta rv"><h2 class="serif">Let's Create Something Exceptional Together.</h2><div class="bt"><a class="btn" href="#contact">Request a Proposal</a><a class="btn o" href="#contact">Contact Our Team</a></div></div>
+</div>
+<div class="pg" id="p-school">
+<div class="hero s"><img class="hi" src="school.jpg" alt="School dining by Your Cuisine Chef"><div class="w"><h1>A Better School Day Starts with Better Food.</h1><p>Chef-prepared meals, flexible programs, and meaningful partnerships that make dining an important part of your school community.</p><div class="bt"><a class="btn" href="#contact">Request a School Dining Proposal</a><a class="btn o" href="#menus">View Sample Menus</a></div></div></div>
+<section class="alt"><div class="w"><div class="sh rv"><h2 class="serif">Chef-Inspired Dining Stations</h2></div><div class="st"><div class="card rv"><img src="s1.jpg" alt="Main Entrée Station"><h3>Main Entrée Station</h3></div><div class="card rv"><img src="s2.jpg" alt="À La Carte Station"><h3>À La Carte Station</h3></div><div class="card rv"><img src="s3.jpg" alt="Grab-and-Go Station"><h3>Grab-and-Go Station</h3></div><div class="card rv"><img src="s4.jpg" alt="Salad and baked potato bar"><h3>Salad &amp; Baked Potato Bar</h3></div></div></div></section>
+<section id="menus"><div class="w"><div class="sh rv"><small></small><h2 class=
+"serif">Sample Dishes &amp; Rotating Menus</h2></div><p class="rv" style="max-width:640px;color:var(--mut);line-height:1.7;margin-bottom:20px">Menus rotate and are built with each school. We will share sample menus designed around your community when you request a proposal.</p><a class="btn" href="#contact">Request Sample Menus</a></div></section><section class="alt" id="nutrition"><div class="w"><div class="sh rv"><small></small><h2 class="serif">Wellness &amp; Allergen Procedures</h2></div><div class="g3"><div class="bx rv"><h3 class="serif">Nutrition &amp; Wellness</h3><p>Balanced, chef-prepared meals designed to support student wellness.</p></div><div class="bx rv"><h3 class="serif">Allergen Procedures</h3><p>Documented food safety and allergen procedures, reviewed with your school.</p></div><div class="bx rv"><h3 class="serif">Food Safety</h3><p>Safe handling standards across every kitchen we operate.</p></div></div></div></section><section id="engagement"><div class="w"><div class="sh rv"><small></small><h2 class="serif">Student Engagement</h2></div><div class="g4"><div class="bx rv"><h3 class="serif">Kids in the Kitchen</h3><p>Hands-on cooking experiences for students.</p></div><div class="bx rv"><h3 class="serif">Chef on Display</h3><p>Students see their food prepared fresh.</p></div><div class="bx rv"><h3 class="serif">Eat &amp; Learn</h3><p>Food education woven into the school day.</p></div><div class="bx rv"><h3 class="serif">Feedback &amp; Gardens</h3><p>Student feedback shapes menus; garden integration where possible.</p></div></div></div></section><section class="alt"><div class="w"><div class="sh rv"><small></small><h2 class="serif">Financial Arrangements</h2></div><div class="g4"><div class="bx rv"><h3 class="serif">Tuition-Inclusive</h3><p>Dining included in tuition.</p></div><div class="bx rv"><h3 class="serif">Retail / Pay-as-You-Go</h3><p>Families and students pay per meal.</p></div><div class="bx rv"><h3 class="serif">Hybrid / Subsidy</h3><p>A blend of tuition support and retail.</p></div><div class="bx rv"><h3 class="serif">Revenue Share</h3><p>Shared results between school and YCC.</p></div></div><p class="nt">Financial models are options, subject to agreement.</p></div></section><section><div class="w"><div class="vd"><div><h2 class="serif">Hear From a School Partner</h2><p>Dr. Dallas Lusk, Executive Director at St. Mark Lutheran School, shares his experience partnering with Your Cuisine Chef.</p><button class="btn" id="vb">▶ Watch the Video</button></div><div class="vp" id="vp" role="button" tabindex="0" aria-label="Play video"><img class="vt" src="https://img.youtube.com/vi/5lGb_GhWdkg/hqdefault.jpg" alt="Dr. Dallas Lusk video thumbnail" onerror="this.remove()"><img class="vl" src="logo.png" alt="Your Cuisine Chef"><button class="pb" tabindex="-1" aria-hidden="true">▶</button><span>Dr. Dallas Lusk, St. Mark Lutheran School</span></div></div></div></section><section><div class="w"><div class="q3"><div class="q rv">I have never experienced a school lunch that is consistently so good! Things like fresh green beans instead of canned. Homemade eggrolls, hamburgers, chicken tenders. I am just beyond impressed.<b>School Community Member</b></div><div class="q rv">It has completely changed the feel of lunch. Kids can smell the food while walking across campus, and they are excited to get their lunches.<b>Elizabeth Chavez, Northland Christian School</b></div><div class="q rv">You and all the other staff truly make his days at Northland so much better.<b>Amanda O'Kelley, Parent</b></div></div><!-- Confirm quote wording, attribution and publication permission before launch --></div></section><div class="cta rv"><h2 class="serif">Let's Create Something Exceptional Together.</h2><div class="bt"><a class="btn" href="#contact">Request a Proposal</a><a class="btn o" href="#contact">Contact Our Team</a></div></div></div><div class="pg" id="p-corporate"><div class="hero s"><img class="hi" src="corp.jpg" alt="Your Cuisine Chef food and dining"><div class="w"><h1>Bring People Together Through Great Food.</h1><p>Thoughtfully designed dining programs that create inviting workplaces and stronger company cultures.</p><div class="bt"><a class="btn" href="#contact">Discuss Your Workplace Dining Program</a></div></div></div><section class="alt"><div class="w"><div class="sh rv"><small></small><h2 class="serif">Dining Built Around Your Workplace</h2></div><div class="ib" style="grid-template-columns:repeat(5,1fr)"><div class="rv"><div class="ic ">☕</div>Workplace Cafés</div><div class="rv"><div class="ic or">🍳</div>Daily Breakfast &amp; Lunch</div><div class="rv"><div class="ic ">🥪</div>Grab-and-Go</div><div class="rv"><div class="ic or">🍽</div>Executive Dining</div><div class="rv"><div class="ic ">🎉</div>Workplace Catering</div></div></div></section><section class="alt"><div class="w"><div class="sh rv"><small></small><h2 class="serif">How We Work With You</h2></div><div class="g3"><div class="bx rv"><h3 class="serif">Customization</h3><p>Menus and service styles shaped around your people and space.</p></div><div class="bx rv"><h3 class="serif">On-Site Service</h3><p>A YCC team serving on your premises.</p></div><div class="bx rv"><h3 class="serif">Operating Oversight</h3><p>Hands-on management of daily operations.</p></div><div class="bx rv"><h3 class="serif">Menu Planning</h3><p>Chef-led menus planned around your preferences.</p></div><div class="bx rv"><h3 class="serif">Employee Experience</h3><p>Dining that improves the workday and builds culture.</p></div><div class="bx rv"><h3 class="serif">Service Flexibility</h3><p>Programs that adjust as your needs change.</p></div></div></div></section><section><div class="w"><div class="sp"><div class="rv"><h2 class="serif">Elevate Your Workplace Experience</h2><p>Customized menus, on-site service, operating oversight and thoughtful menu planning shape an employee experience that fits your team and adapts as your needs change.</p><div class="bt"><a class="btn" href="#contact">Discuss Your Program</a></div></div><div class="im rv"><img src="elev.jpg" alt="Workplace dining"></div></div></div></section><div class="cta rv"><h2 class="serif">Let's Create Something Exceptional Together.</h2><div class="bt"><a class="btn" href="#contact">Request a Proposal</a><a class="btn o" href="#contact">Contact Our Team</a></div></div></div><div class="pg" id="p-cafe"><div class="hero s"><img class="hi" src="cafe.jpg" alt="Your Cuisine Chef food and dining"><div class="w"><h1>Your Space. Your Brand. Our Expertise.</h1><p>Specialty beverages, coffee bar operations, breakfast items, pastries and grab-and-go, tailored to your café.</p><div class="bt"><a class="btn" href="#contact">Explore Café Solutions</a></div></div></div><section class="alt"><div class="w"><div class="sh rv"><small></small><h2 class="serif">Café Concepts</h2></div><div class="st"><div class="card rv"><img src="f1.jpg" alt="Specialty Beverages"><h3>Specialty Beverages</h3></div><div class="card rv"><img src="c3.jpg" alt="Coffee Bar"><h3>Coffee Bar</h3></div><div class="card rv"><img src="f2.jpg" alt="Fresh Breakfast"><h3>Fresh Breakfast</h3></div><div class="card rv"><img src="c2.jpg" alt="Café Interiors"><h3>Café Interiors</h3></div></div></div></section><section><div class="w"><div class="sh rv"><small></small><h2 class="serif">Our Approach</h2></div><div class="g3"><div class="bx rv"><h3 class="serif">Coffee Bar Operations</h3><p>Coffee bar service and beverage programs tailored to your space.</p></div><div class="bx rv"><h3 class="serif">Breakfast &amp; Pastries</h3><p>Fresh breakfast items and pastries.</p></div><div class="bx rv"><h3 class="serif">Grab-and-Go</h3><p>Convenient ready-to-go selections.</p></div><div class="bx rv"><h3 class="serif">Tailored Café Concepts</h3><p>A concept built around your space and your brand.</p></div><div class="bx rv"><h3 class="serif">Management</h3><p>Day-to-day café management handled by YCC.</p></div><div class="bx rv"><h3 class="serif">Service Approach</h3><p>Friendly, hospitality-first service.</p></div></div></div></section><div class="cta rv"><h2 class="serif">Let's Create Something Exceptional Together.</h2><div class="bt"><a class="btn" href="#contact">Request a Proposal</a><a class="btn o" href="#contact">Contact Our Team</a></div></div></div><div class="pg" id="p-catering"><div class="hero s"><img class="hi" src="cater.jpg" alt="Your Cuisine Chef food and dining"><div class="w"><h1>Thoughtfully Prepared. Professionally Served.</h1><p>Chef-crafted catering for corporate meetings, school functions, executive breakfasts, receptions and celebrations.</p><div class="bt"><a class="btn" href="#contact" data-k="c">Request Catering Information</a></div></div></div><section class="alt"><div class="w"><div class="sh rv"><small></small><h2 class="serif">Every Occasion</h2></div><div class="ib"><div class="rv"><div class="ic ">🏫</div>School Events</div><div class="rv"><div class="ic or">🏢</div>Corporate Functions</div><div class="rv"><div class="ic ">🍽</div>Executive Breakfasts</div><div class="rv"><div class="ic or">🎉</div>Special Celebrations</div></div><div class="st"><div class="card rv"><img src="c4.jpg" alt="Chef-crafted menus"><h3>Chef-crafted menus</h3></div><div class="card rv"><img src="f3.jpg" alt="Hot serving trays"><h3>Hot serving trays</h3></div><div class="card rv"><img src="f4.jpg" alt="Platter presentation"><h3>Platter presentation</h3></div><div class="card rv"><img src="s4.jpg" alt="Buffet presentation"><h3>Buffet presentation</h3></div></div></div></section><section><div class="w"><div class="sh rv"><small></small><h2 class="serif">From Planning to Service</h2></div><div class="g4"><div class="bx rv"><h3 class="serif">Planning</h3><p>We work with you on menus and timing for your event.</p></div><div class="bx rv"><h3 class="serif">Presentation</h3><p>Chef-crafted food, attractively presented.</p></div><div class="bx rv"><h3 class="serif">Delivery &amp; Set-up</h3><p>Delivery and set-up arranged to suit your event.</p></div><div class="bx rv"><h3 class="serif">Staffing</h3><p>Event staffing available where needed.</p></div></div><div style="margin-top:26px"><a class="btn" href="#contact" data-k="c">Request Catering Information</a></div></div></section><div class="cta rv"><h2 class="serif">Let's Create Something Exceptional Together.</h2><div class="bt"><a class="btn" href="#contact">Request a Proposal</a><a class="btn o" href="#contact">Contact Our Team</a></div></div></div><div class="pg" id="p-difference"><div class="hero s"><img class="hi" src="hero.jpg" alt="Your Cuisine Chef food and dining"><div class="w"><h1>Big-Company Capabilities. Local-Company Attention.</h1><p>We combine culinary expertise, operational excellence and personal leadership to create dining programs that are truly different.</p><div class="bt"><a class="btn" href="#team">Meet Our Team</a><a class="btn o" href="#contact">Request a Proposal</a></div></div></div><section class="alt" id="team"><div class="w"><div class="sp"><div class="rv"><h2 class="serif">Our Story</h2><p>YCC was founded by Chef Gabriel McKnight on a simple belief: great food brings people together. Scratch cooking, chef-led menus and direct local accountability guide every program.</p><div class="bt"><a class="btn" href="#contact">Request a Proposal</a></div></div><div class="im rv"><img src="chef.jpg" alt="Chef Gabriel McKnight"></div></div></div></section><section class="alt"><div class="w"><div class="g4" style="grid-template-columns:1fr 1fr"><div class="bx rv"><h3 class="serif">Scratch Cooking &amp; Chef-Led Menus</h3><p>Real ingredients and chef-crafted recipes shape every menu.</p></div><div class="bx rv"><h3 class="serif">Local Leadership &amp; Direct Accountability</h3><p>A locally led team that answers directly to you.</p></div></div></div></section><section><div class="w"><div class="g4"><div class="bx rv"><h3 class="serif">Operational Support</h3><p>Hands-on support for your kitchen and team.</p></div><div class="bx rv"><h3 class="serif">Financial Transparency</h3><p>Clear, flexible financial models.</p></div><div class="bx rv"><h3 class="serif">Customizable Partnerships</h3><p>Programs built around your community.</p></div><div class="bx rv"><h3 class="serif">Community Engagement</h3><p>More than a meal, a lasting impact.</p></div></div><div class="ib" style="grid-template-columns:repeat(3,1fr)"><div class="rv"><div class="ic ">🥗</div>Scratch Cooking</div><div class="rv"><div class="ic or">👨‍🍳</div>Culinary Creativity</div><div class="rv"><div class="ic ">📍</div>Local Leadership</div></div></div></section><section class="alt" id="stories"><div class="w"><div class="sh rv"><small></small><h2 class="serif">School Success Stories &amp; Recommendations</h2></div><div class="q3"><div class="q rv">I have never experienced a school lunch that is consistently so good! Things like fresh green beans instead of canned. Homemade eggrolls, hamburgers, chicken tenders. I am just beyond impressed.<b>School Community Member</b></div><div class="q rv">It has completely changed the feel of lunch. Kids can smell the food while walking across campus, and they are excited to get their lunches.<b>Elizabeth Chavez, Northland Christian School</b></div><div class="q rv">You and all the other staff truly make his days at Northland so much better.<b>Amanda O'Kelley, Parent</b></div></div><!-- Confirm quote wording, attribution and publication permission before launch --><p style="margin-top:20px">Explore: <a href="#school" style="color:var(--o)">School Dining</a> · <a href="#corporate" style="color:var(--o)">Corporate Dining</a> · <a href="#cafe" style="color:var(--o)">Cafés</a> · <a href="#catering" style="color:var(--o)">Catering</a></p></div></section><section><div class="w"><div class="sp"><div class="rv" id="careers"><h2 class="serif">Join a Team That Makes a Difference</h2><p>Be part of a company that values great food and meaningful work. Send your resume to team@yccfoodservice.com.</p></div><div class="im rv"><img src="c5.jpg" alt="YCC chef at work"></div></div></div></section><div class="cta rv"><h2 class="serif">Let's Create Something Exceptional Together.</h2><div class="bt"><a class="btn" href="#contact">Request a Proposal</a><a class="btn o" href="#contact">Contact Our Team</a></div></div></div><div class="pg" id="p-contact"><div class="hero s"><img class="hi" src="cater.jpg" alt="Chef-prepared food for catering and special events"><div class="w"><h1>Let's Create Something Exceptional Together.</h1><p>We'd love to learn about your organization and discuss how we can create a dining program for your community.</p><div class="bt"><span></span></div></div></div><section><div class="w"><div class="ct"><div class="rv"><h2 class="serif" style="font-size:34px;margin-bottom:14px">Contact Us</h2><div class="ci"><p>📞 <b>832-257-6694</b></p><p>✉ <b>team@yccfoodservice.com</b></p><p>🌐 <b>yccfoodservice.com</b></p><p>📍 <b>Houston, TX</b></p></div></div><div><div id="ok" role="status" tabindex="-1"><h3 class="serif">Thank you!</h3><p>Your inquiry has been received. The YCC team will be in touch shortly.</p></div><form id="cf" class="fm rv" novalidate><div><label for="name">Name *</label><input id="name" name="Name *" type="text" required></div><div><label for="org">Organization *</label><input id="org" name="Organization *" type="text" required></div><div><label for="email">Email *</label><input id="email" name="Email *" type="email" required></div><div><label for="phone">Phone</label><input id="phone" name="Phone" type="tel" ></div><div><label for="loc">Location</label><input id="loc" name="Location" type="text" ></div><div><label for="svc">Service interest</label><select id="svc" name="Service"><option>Independent School Dining</option><option>Corporate &amp; Workplace Dining</option><option>Coffee Shops &amp; Cafés</option><option>Catering &amp; Special Events</option><option>Foodservice Management</option></select></div><div><label for="pop">Approx. daily population / guest count</label><input id="pop" name="Approx. daily population / guest count" type="number" ></div><div><label for="start">Desired start date</label><input id="start" name="Desired start date" type="date" ></div><div class="f"><label for="kind">Inquiry type</label><select id="kind" name="Inquiry type"><option>Management inquiry</option><option>Catering request</option></select></div><div class="f"><label for="msg">Message</label><textarea id="msg" name="Message" rows="4"></textarea></div><div class="f"><button class="btn" type="submit">Submit Inquiry</button></div></form></div></div></div></section></div></main>
+<footer><div class="w fg"><div><img src="logo.png" alt="Your Cuisine Chef" class="fl"><p>Real Food. Real Hospitality. Real Partnerships.</p><p>Scratch Cooking · Culinary Creativity · Local Leadership</p></div><div><h4>Explore</h4><a href="#home">Home</a><a href="#school">Independent School Dining</a><a href="#corporate">Corporate &amp; Workplace Dining</a><a href="#cafe">Coffee Shops &amp; Cafés</a><a href="#catering">Catering &amp; Special Events</a><a href="#difference">The YCC Difference</a><a href="#contact">Contact / Request a Proposal</a></div><div><h4>Contact</h4><a href="tel:8322576694">📞 832-257-6694</a><a href="mailto:team@yccfoodservice.com">✉ team@yccfoodservice.com</a><a href="https://yccfoodservice.com">🌐 yccfoodservice.com</a><p>📍 Houston, TX</p></div></div><div class="fb"><span>© 2026 Your Cuisine Chef. All rights reserved.</span><span>Designed and Developed by <b>Muhammad Saud Javed</b></span></div></footer>
+<div class="md" id="vm" role="dialog" aria-label="Video"><div class="mb vm"><button class="cl" style="color:#fff" aria-label="Close">×</button><div style="aspect-ratio:16/9;position:relative"><div id="vf" style="width:100%;height:100%"></div><div id="vfb" style="display:none;position:absolute;inset:0;place-items:center;text-align:center;color:#fff;padding:20px;background:#000"><div><p style="margin-bottom:14px">This video cannot be played inside the page here.</p><a class="btn" href="https://www.youtube.com/watch?v=5lGb_GhWdkg" target="_blank" rel="noopener">Watch on YouTube</a></div></div></div><p id="vn">Dr. Dallas Lusk, Executive Director, St. Mark Lutheran School · <a href="https://www.youtube.com/watch?v=5lGb_GhWdkg" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">Watch on YouTube</a></p></div></div><div id="ts" role="status"></div><script>
+
+const T={home:['Your Cuisine Chef | Scratch-Cooked School &amp; Corporate Dining','Real food, real hospitality, real partnerships.'],school:['Independent School Dining | Your Cuisine Chef','Chef-prepared school meals, dining stations and flexible programs.'],corporate:['Corporate &amp; Workplace Dining | Your Cuisine Chef','Workplace cafés, executive dining and catering.'],cafe:['Coffee Shops &amp; Cafés | Your Cuisine Chef','Specialty beverages, breakfast and tailored café concepts.'],catering:['Catering &amp; Special Events | Your Cuisine Chef','Chef-crafted catering for meetings, schools and celebrations.'],difference:['The YCC Difference | Your Cuisine Chef','Big-company capabilities with local-company attention.'],contact:['Contact / Request a Proposal | Your Cuisine Chef','Request a dining proposal from Your Cuisine Chef.']};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+addEventListener('load',()=>setTimeout(()=>$('#pre').classList.add('x'),1700));
+let md=document.querySelector('meta[name=description]');if(!md){md=document.createElement('meta');md.name='description';document.head.appendChild(md)}
+function route(){const h=location.hash.slice(1)||'home',el=document.getElementById(h);let k=T[h]&&!h.startsWith('p-')?h:(el&&el.closest('.pg')?el.closest('.pg').id.slice(2):'home');
+$$('.pg').forEach(p=>p.classList.toggle('on',p.id==='p-'+k));$$('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+k));
+document.title=T[k][0].replace(/&amp;/g,'&');md.content=T[k][1];$('#nav').classList.remove('on');
+if(el&&!T[h])el.scrollIntoView();else scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+const pageFeatures={
+school:[['🍽','Scratch-Cooked Meals','Fresh, chef-prepared school dining.'],['🥗','Rotating Menus','Menus shaped around each school.'],['🎓','Student Engagement','Food education and hands-on experiences.'],['♥','Wellness & Safety','Thoughtful wellness and food safety.']],
+corporate:[['☕','Workplace Cafés','Dining that fits your workplace.'],['🍳','Flexible Service','Breakfast, lunch and grab-and-go.'],['👨‍🍳','On-Site Management','Hands-on daily operating support.'],['🎉','Workplace Catering','Food for meetings and events.']],
+cafe:[['☕','Specialty Beverages','Coffee and crafted café drinks.'],['🥐','Fresh Breakfast','Pastries and morning favorites.'],['🥪','Grab-and-Go','Convenient choices for busy days.'],['✨','Custom Concepts','A café experience built for your space.']],
+catering:[['🏫','School Events','Catering for school communities.'],['🏢','Corporate Functions','Food for meetings and company events.'],['🍽','Chef-Crafted Menus','Thoughtful menus for your occasion.'],['🎉','Special Celebrations','Receptions and milestone gatherings.']],
+difference:[['🥗','Scratch Cooking','Real ingredients and chef-led menus.'],['📍','Local Leadership','Personal, hands-on support.'],['👨‍🍳','Culinary Expertise','Creative food and service planning.'],['♥','Strong Partnerships','Programs built around your community.']],
+contact:[['🤝','Personal Partnership','A local team ready to learn about you.'],['🍽','Dining Solutions','School, workplace, café and catering.'],['✍️','Tailored Proposal','A conversation about your needs.'],['📍','Houston-Based Team','Local leadership and support.']]
+};
+Object.entries(pageFeatures).forEach(([page,features])=>{
+const hero=$(`#p-${page} .hero`);if(!hero)return;
+const strip=document.createElement('section');strip.className='hero-values';strip.setAttribute('aria-label',`${page} service highlights`);
+const inner=document.createElement('div');inner.className='w';
+features.forEach(([icon,title,description])=>{
+const item=document.createElement('div');item.className='hero-value';
+const badge=document.createElement('div');badge.className='ic';badge.setAttribute('aria-hidden','true');badge.textContent=icon;
+const copy=document.createElement('div');const heading=document.createElement('strong');heading.textContent=title;const detail=document.createElement('span');detail.textContent=description;
+copy.append(heading,detail);item.append(badge,copy);inner.append(item);
+});
+strip.append(inner);hero.after(strip);
+});
+$('#bg').onclick=()=>{const o=$('#nav').classList.toggle('on');$('#bg').setAttribute('aria-expanded',o)};
+function toast(t){const x=$('#ts');x.textContent=t;x.classList.add('on');setTimeout(()=>x.classList.remove('on'),3200)}
+$$('.vp img.vt').forEach(img=>{img.src='video.jpg';img.onerror=null});
+$$('.vp').forEach(vp=>{const vb=vp.closest('.vd').querySelector('.btn');function pv(){if(vp.querySelector('video'))return;const v=document.createElement('video');v.controls=true;v.autoplay=true;v.playsInline=true;v.preload='metadata';v.poster='video.jpg';v.setAttribute('aria-label','Dr. Dallas Lusk, St. Mark Lutheran School');const source=document.createElement('source');source.src='YCC%20Foodservice%20Client%20Testimonial%202025.mp4';source.type='video/mp4';v.append(source);v.addEventListener('playing',()=>{vb.textContent='Video is playing';vb.disabled=true},{once:true});v.addEventListener('error',()=>{vb.textContent='Video could not be loaded'});vp.replaceChildren(v);v.play().catch(()=>{vb.textContent='Press play on the video'})}vp.onclick=pv;vb.onclick=pv;vp.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pv()}}});
+$$('[data-k]').forEach(a=>a.addEventListener('click',()=>{$('#kind').value='Catering request';$('#svc').value='Catering & Special Events'}));
+$('#cf').onsubmit=e=>{e.preventDefault();const f=e.target;let bad=null;$$('#cf [required]').forEach(i=>{i.style.borderColor='';if(!i.value.trim()&&!bad){bad=i}if(i.type==='email'&&i.value&&!/^\S+@\S+\.\S+$/.test(i.value))bad=bad||i});if(bad){bad.style.borderColor='red';bad.focus();toast('Please complete the required fields correctly.');return}
+const b=[...new FormData(f)].map(a=>a.join(': ')).join('\n');f.style.display='none';$('#ok').classList.add('on');$('#ok').focus();
+location.href='mailto:team@yccfoodservice.com?subject='+encodeURIComponent($('#kind').value+' - '+$('#svc').value)+'&body='+encodeURIComponent(b)};
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&(e.target.classList.add('in'),io.unobserve(e.target))),{threshold:.1});$$('.rv').forEach(r=>io.observe(r));
+$$('.card,.im,.q,.bx').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(800px) rotateY(${x*12}deg) rotateX(${-y*12}deg) translateZ(12px)`});c.addEventListener('mouseleave',()=>c.style.transform='')});
+</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Your Cuisine Chef","url":"https://yccfoodservice.com","telephone":"832-257-6694","email":"team@yccfoodservice.com"}</script></body></html>
